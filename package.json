@@ -5,16 +5,20 @@
   "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node index.ts"
+    "start": "ts-node src/index.ts",
+    "start-pdf": "ts-node src/pdf.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@types/pdfkit": "^0.13.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.3"
   },
   "dependencies": {
-    "exceljs": "^4.4.0"
+    "exceljs": "^4.4.0",
+    "pdfkit": "^0.15.0",
+    "puppeteer": "^22.6.2"
   }
 }
